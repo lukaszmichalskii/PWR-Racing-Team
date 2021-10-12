@@ -11,29 +11,17 @@ def collect_tolls() -> Dict[str, float]:
     """
     paths_types = ['Red', 'Green', 'Blue']
 
-    raw_tolls = input("Enter tolls in red green blue order: ").split()
+    raw_tolls = input().split()
 
-    while not (is_tolls_length_ok(raw_tolls) and is_toll_ok(raw_tolls)):
-        print("Incorrect input!")
-        raw_tolls = input("Enter tolls in red green blue order: ").split()
+    while not is_tolls_length_ok(raw_tolls):
+        print("Incorrect input! Try again: ", end=' ')
+        raw_tolls = input().split()
     else:
         tolls: Dict[str, float] = {paths_types[0]: float(raw_tolls[0]),
                                    paths_types[1]: float(raw_tolls[1]),
                                    paths_types[2]: float(raw_tolls[2])}
 
     return tolls
-
-
-def is_toll_ok(tolls: List[str]) -> bool:
-    """
-    Function check if tolls are correct and represent proper cost e.g. not string
-    :param tolls: entered tolls
-    """
-    for toll in tolls:
-        if not toll.isnumeric():
-            return False
-
-    return True
 
 
 def is_tolls_length_ok(tolls: List[str]) -> bool:

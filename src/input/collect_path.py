@@ -9,15 +9,15 @@ def collect_path(size: int) -> List[str]:
     :param size: The number of stops / hangars to visit
     :return: A complete path, graph vertices are represented by capital letters
     """
-    path = input("Enter hangars: ").split()
+    path = input().split()
     while not (is_path_length_ok(path, size) and is_path_nodes_ok(path)):
-        print("Error! Wrong input")
-        path = input("Enter hangars: ").split()
+        print("Incorrect input! Try again: ", end=' ')
+        path = input().split()
 
     return path
 
 
-def is_path_length_ok(path: List[str], size) -> bool:
+def is_path_length_ok(path: List[str], size: int) -> bool:
     """
     Function check if entered path length is correct
     :param path: entered path

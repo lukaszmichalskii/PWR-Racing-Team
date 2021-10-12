@@ -20,6 +20,7 @@ if __name__ == '__main__':
                                                ('G', 'H', tolls['Green']), ('A', 'H', tolls['Green']),
                                                ('I', 'L', tolls['Green']), ('J', 'K', tolls['Green']),
                                                ('J', 'M', tolls['Green']), ('C', 'M', tolls['Green']),
+                                               ('G', 'J', tolls['Green']),
                                                ('A', 'E', tolls['Blue']), ('F', 'G', tolls['Blue']),
                                                ('H', 'J', tolls['Blue']), ('B', 'I', tolls['Blue']),
                                                ('I', 'K', tolls['Blue']), ('M', 'N', tolls['Blue']),

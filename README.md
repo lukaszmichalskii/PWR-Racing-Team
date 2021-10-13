@@ -46,10 +46,9 @@ N is the length of a given path.
 ***Total time complexity: O(N * (|E| + |V|log|V|))***
 
 ### Optimizations
-We could store the counted paths in memory because the plot is undirected,
-hence the shortest path from A -> B is equal to the shortest path from
+We could store the counted paths in memory because the graph is undirected,
+hence the shortest path from A -> B is equal to the shortest path z
 B -> A, so we would not have to count this value again.
-
 
 ### Additional information
 The program has built-in simple error handling methods 

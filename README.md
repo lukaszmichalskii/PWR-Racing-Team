@@ -47,7 +47,7 @@ N is the length of a given path.
 
 ### Optimizations
 We could store the counted paths in memory because the graph is undirected,
-hence the shortest path from A -> B is equal to the shortest path z
+hence the shortest path from A -> B is equal to the shortest path from
 B -> A, so we would not have to count this value again.
 
 ### Additional information

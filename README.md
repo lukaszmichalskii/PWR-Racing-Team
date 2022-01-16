@@ -37,7 +37,7 @@ Then we need to update our total cost by the cost of "sub travel"
 To calculate the cheapest cost of travel from hangar A to B, we can use Dijkstra's algorithm
 of finding the shortest path in undirected, connected, weighted graphs.
 For more information see:
-- [Dijkstra's algorithm](https://en.wikipedia.org/wiki/Boids)
+- [Dijkstra's algorithm](https://www.baeldung.com/java-dijkstra)
 - [Dijkstra's Shortest Path Algorithm](https://brilliant.org/wiki/dijkstras-short-path-finder/)
 
 Algorithm time complexity is O(|E| + |V|log|V|) and in our program in the worst-case we need to make N calculations where
